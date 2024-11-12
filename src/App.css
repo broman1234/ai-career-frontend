@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+/* 将主色调更新为马卡龙色系 */
+:root {
+  --primary-color: #FFB5C2;     /* 柔和的粉色 */
+  --secondary-color: #97E5D7;   /* 清新的薄荷绿 */
+  --accent-color: #FFE5B4;      /* 温暖的杏色 */
+  --background-color: #FFF8F8;  /* 淡淡的米白色背景 */
+  --text-color: #707070;        /* 柔和的深灰色文字 */
+  
+  /* 辅助色 */
+  --lavender: #E0D5F5;         /* 淡紫色 */
+  --soft-blue: #B5DEFF;        /* 淡蓝色 */
+  --light-pink: #FFE4E8;       /* 浅粉色 */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* 导航栏样式 */
+.navbar {
+  background-color: var(--primary-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* 按钮样式 */
+.button {
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  background-color: var(--accent-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 卡片样式 */
+.card {
+  background-color: white;
+  border: 1px solid var(--light-pink);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 标题样式 */
+h1, h2, h3 {
+  color: var(--text-color);
+}
+
+/* 链接样式 */
+a {
+  color: var(--secondary-color);
+}
+
+a:hover {
+  color: var(--primary-color);
 }
